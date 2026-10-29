@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cat's Corner - Gallery</title>
+
+    <style>
+        /* GENERAL STYLING - SAME AS HOME */
+        body {
+            background-color: #FFE9EF;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 0;
+            color: #444;
+        }
+
+        h1, h2, h3 {
+            font-family: Georgia, "Times New Roman", serif;
+            color: #8B4560;
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        nav {
+            padding: 10px;
+            line-height: 2;
+        }
+
+        nav a {
+            color: #C04F78;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 8px;
+        }
+
+        nav a:hover {
+            color: #8B4560;
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #E8AABD;
+            margin: 15px;
+        }
+
+        /* INTRODUCTION */
+        .gallery-intro {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            line-height: 1.8;
+        }
+
+        /* GALLERY LAYOUT */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* GALLERY CARDS */
+        .gallery-item {
+            background-color: #FFFFFF;
+            border: 1px solid #FFCCD8;
+            border-radius: 8px;
+            padding: 15px;
+            width: 280px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(139, 69, 96, 0.15);
+        }
+
+        .gallery-item img {
+            display: block;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .gallery-item p {
+            margin: 12px 0 0;
+            font-weight: bold;
+            color: #8B4560;
+            line-height: 1.5;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 15px;
+            line-height: 1.6;
+        }
+
+        footer a {
+            color: #C04F78;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 600px) {
+            header {
+                padding: 15px 10px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                margin: 0 4px;
+                font-size: 13px;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            .gallery-container {
+                padding: 10px;
+                gap: 15px;
+            }
+
+            .gallery-item {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .gallery-item img {
+                height: 220px;
+            }
+
+            .gallery-intro {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>🐱 Cat's Corner Gallery 🐾</h1>
+        <h3>Our Beautiful Feline Collection</h3>
+        <hr>
+    </header>
+
+    <!-- NAVIGATION MENU -->
+    <nav aria-label="Main navigation">
+        | <a href="index.html">HOME</a> |
+        <a href="gallery.html" aria-current="page">GALLERY</a> |
+        <a href="CatCare.html">CAT CARE</a> |
+        <a href="about_us.html">ABOUT US</a> |
+        <hr>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <h2>Meet Our Cats 🐈</h2>
+
+        <p class="gallery-intro">
+            Browse through our collection of adorable, playful,
+            sleepy, and curious feline friends.
+            Every cat has its own unique charm!
+        </p>
+
+        <!-- CAT GALLERY -->
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img
+                    src="https://media.istockphoto.com/id/465257035/photo/small-orange-kitten-lie-on-the-bed.jpg?s=612x612&w=0&k=20&c=p3Br3Jby5H-MOk9tSt0lEloX3JpM2bdEZ_b7egqxDV4="
+                    alt="Orange kitten relaxing on a bed"
+                    loading="lazy"
+                >
+                <p>💗 Sleepy Little Kitten</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://i.ebayimg.com/images/g/5qgAAOSwoBtW3zvq/s-l1200.jpg"
+                    alt="Adorable cat from the gallery collection"
+                    loading="lazy"
+                >
+                <p>🐾 Sweet Feline Friend</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://cdn.pixabay.com/photo/2024/03/07/10/38/simba-8618301_1280.jpg"
+                    alt="Beautiful cat named Simba"
+                    loading="lazy"
+                >
+                <p>🐈 Curious Cat</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://dinoanimals.com/wp-content/uploads/2023/03/Domestic-cat-35.jpg"
+                    alt="Domestic cat posing for a photo"
+                    loading="lazy"
+                >
+                <p>🌸 Lovely House Cat</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://img.freepik.com/premium-photo/pet-animal-cute-orange-kitten-baby-cat-indoor_693630-20738.jpg"
+                    alt="Cute orange kitten indoors"
+                    loading="lazy"
+                >
+                <p>🧡 Tiny Orange Kitten</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://static.vecteezy.com/system/resources/previews/046/608/527/large_2x/a-fat-cat-lying-down-on-wooden-floor-photo.jpeg"
+                    alt="Chubby cat lying on a wooden floor"
+                    loading="lazy"
+                >
+                <p>😸 Cozy and Relaxed</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://i.pinimg.com/originals/ac/5d/89/ac5d894bd47c572f369c4c1d9e2fa933.jpg"
+                    alt="Adorable cat from the feline collection"
+                    loading="lazy"
+                >
+                <p>💖 Purr-fect Companion</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://thepetfantasy.com/wp-content/uploads/2024/12/Screenshot-2024-12-23-081555.png"
+                    alt="Cat featured in our gallery"
+                    loading="lazy"
+                >
+                <p>🐾 Little Bundle of Joy</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://thepetfantasy.com/wp-content/uploads/2025/05/A218-6.png"
+                    alt="Lovely feline friend"
+                    loading="lazy"
+                >
+                <p>🌷 Cute and Cuddly</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://www.hideandscratch.com/cdn/shop/articles/Most_Attractive_Youtube_Thumbnail_1.png?v=1729061686&width=1100"
+                    alt="Cat featured in a pet article"
+                    loading="lazy"
+                >
+                <p>😻 Adorable Cat Moments</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://media.istockphoto.com/id/512202044/photo/feline.jpg?s=612x612&w=0&k=20&c=CgNwJ0ONvza2DfEJCu_Ps0DIV4Kd1ET24L0Ftgks-lA="
+                    alt="Beautiful feline portrait"
+                    loading="lazy"
+                >
+                <p>🐱 Beautiful Feline</p>
+            </div>
+
+        </div>
+
+        <!-- CLOSING MESSAGE -->
+        <section class="gallery-intro">
+            <h2>Small Paws, Big Love! 💗</h2>
+
+            <p>
+                Every cat is special and deserves a loving home.
+                Thank you for visiting our little collection
+                of furry friends!
+            </p>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Author: <a href="#">Kiana Mae Dulay</a><br>
+            Year: 2026<br>
+            Place: Guimbal, Iloilo, Philippines
+        </p>
+
+        <p>
+            &copy; 2026 Cat's Corner. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
